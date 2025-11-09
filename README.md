@@ -28,6 +28,6 @@ python manage.py runserver
 ```
 ## 🎬 Loyihaning demo videosi
 
-Quyidagi video loyihaning ishga tushirilishini ko‘rsatadi:
+Quyidagi rasmga bosib YouTube’dagi videoni tomosha qiling:
 
-<iframe width="600" height="350" src="https://www.youtube.com/embed/OabU3CehGoE" frameborder="0" allowfullscreen></iframe>
+[![Loyihaning demo videosi](https://img.youtube.com/vi/OabU3CehGoE/0.jpg)](https://www.youtube.com/watch?v=OabU3CehGoE)
