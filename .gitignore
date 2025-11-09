@@ -30,7 +30,6 @@ local_settings.py
 *.bmp
 *.tiff
 *.gif
-*.mp4
 *.avi
 *.mov
 *.mkv
