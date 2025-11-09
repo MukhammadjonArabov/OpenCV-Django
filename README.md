@@ -14,6 +14,12 @@ Loyiha asosiy funksiyalari:
 1. Loyiha fayllarini yuklab oling yoki GitHub’dan klon qiling:
 
 ```bash
+python -m venv venv
+# Windows:
+venv\Scripts\activate
+# Linux / macOS:
+source venv/bin/activate
+
 git clone https://github.com/<sizning_username>/opencv_django_project.git
 cd opencv_django_project
 pip install -r requirements.txt 
