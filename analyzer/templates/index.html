@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="uz">
+<head><meta charset="utf-8"><title>OpenCV Django Analyzer</title>
+<style>body{font-family:Arial;padding:20px}button{padding:10px 14px;margin:6px}</style>
+</head>
+<body>
+<h2>OpenCV Django Analyzer</h2>
+<form action="{% url 'camera' %}" method="get">
+    <button type="submit">Kamera orqali odamni aniqlash</button>
+</form>
+<hr>
+<form action="{% url 'analyze_image' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="image" accept="image/*" required>
+    <button type="submit">Rasimni tahlil qilish</button>
+</form>
+{% if analyzed_image %}
+    <h3>Natija:</h3>
+    <img src="{{ analyzed_image }}" style="max-width:600px"><br>
+    <h4>Ranglar:</h4>
+    <ul>{% for name,percent in colors %}<li>{{ name }} — {{ percent }}%</li>{% endfor %}</ul>
+    <h4>Shakllar:</h4>
+    <ul>{% for s,cx,cy,a in shapes %}<li>{{ s }} (area {{ a|floatformat:0 }})</li>{% endfor %}</ul>
+{% endif %}
+</body></html>
