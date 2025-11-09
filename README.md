@@ -20,8 +20,8 @@ venv\Scripts\activate
 # Linux / macOS:
 source venv/bin/activate
 
-git clone https://github.com/<sizning_username>/opencv_django_project.git
-cd opencv_django_project
+git clone https://github.com/MukhammadjonArabov/OpenCV-Django.git
+cd OpenCV-Django
 pip install -r requirements.txt 
 python manage.py migrate 
 python manage.py runserver
