@@ -25,3 +25,9 @@ cd OpenCV-Django
 pip install -r requirements.txt 
 python manage.py migrate 
 python manage.py runserver
+```
+## 🎬 Loyihaning demo videosi
+
+Quyidagi video loyihaning ishga tushirilishini ko‘rsatadi:
+
+<iframe width="600" height="350" src="https://www.youtube.com/embed/OabU3CehGoE" frameborder="0" allowfullscreen></iframe>
